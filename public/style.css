@@ -1,0 +1,152 @@
+body {
+  height: 2700px;
+  font-family: "VT323", monospace;
+}
+
+.count {
+  background: #ffffff;
+  opacity: 0.5;
+  padding-left: 8px;
+  display: inline-block;
+  color: white;
+  margin-top: -2%;
+  margin-left: 94%;
+  font-size: 12px;
+  width: 5%;
+  position: fixed;
+}
+
+.count:hover {
+  opacity: 1;
+}
+#viewer-count {
+  text-align: center;
+}
+
+.mute {
+  float: right;
+  font-size: 18px;
+  color: white;
+  background: darkgray;
+  font-family: "VT323", monospace;
+}
+
+.slide_container {
+  margin-top: 25px;
+  margin-left: 38%;
+}
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 40%; /* Full-width */
+  height: 20px; /* Specified height */
+  border-radius: 5px;
+  background: black;
+  cursor: pointer;
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  background: url("https://i.redd.it/9bq2xdtei6j11.jpg");
+  cursor: pointer;
+}
+
+.first {
+  font-size: 20px;
+  text-align: center;
+  /* position: fixed; */
+  /* top: 200px; */
+  /* left: 30%; */
+  color: black;
+  opacity: 0.7;
+}
+
+.question {
+  font-size: 35px;
+  position: fixed;
+  top: 250px;
+  left: 45%;
+  color: black;
+  /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey; */
+  opacity: 0.7;
+}
+
+.question2 {
+  font-size: 35px;
+  position: fixed;
+  top: 55px;
+  left: 46%;
+  color: white;
+  opacity: 0.7;
+}
+
+.prompt {
+  font-size: 35px;
+  position: fixed;
+  top: 250px;
+  left: 45%;
+  color: white;
+  opacity: 0.7;
+}
+
+.prompt2 {
+  font-size: 35px;
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  top: 250px;
+  left: 25%;
+  color: white;
+  opacity: 0.7;
+}
+
+.scrollprompt {
+  font-size: 25px;
+  position: fixed;
+  text-align: center;
+  left: 48%;
+  bottom: 100px;
+  color: white;
+  opacity: 0.7;
+}
+
+.button {
+  background-color: white;
+  opacity: 0.7;
+  font-family: "VT323", monospace;
+  color: black;
+  position: fixed;
+  font-size: 20px;
+  left: 50%;
+  bottom: 100px;
+}
+
+canvas {
+  border: none;
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+#p5Div,
+#threeJSDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#threeJSDiv {
+  z-index: 0;
+}
