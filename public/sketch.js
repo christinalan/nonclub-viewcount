@@ -318,8 +318,8 @@ let balls = [];
 let torusRotate = false;
 
 function preload() {
-  sound = loadSound("Audio/lightM.mp3");
-  p5Font = loadFont("text/VT323-Regular.ttf");
+  sound = loadSound("/Audio/lightM.mp3");
+  p5Font = loadFont("/text/VT323-Regular.ttf");
 }
 
 function setup() {
