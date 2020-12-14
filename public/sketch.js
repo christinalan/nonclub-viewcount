@@ -1143,7 +1143,7 @@ scene.add(room);
 //adding 3D text?
 let yesText;
 var loader = new THREE.FontLoader();
-loader.load("text/Tangerine_Bold.json", function (font) {
+loader.load("/text/Tangerine_Bold.json", function (font) {
   var materialT = new THREE.MeshPhongMaterial({
     // color: 0x0033ff,
     color: "white",
