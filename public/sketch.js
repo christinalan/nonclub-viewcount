@@ -666,12 +666,12 @@ function draw() {
   if (oscs.length >= 20) {
     let backgroundAlpha = map(oscs.length, 20, 50, 0, 255);
     background(255, backgroundAlpha);
-    viewBox.style.backgroundColor = "white";
-    viewBox.style.color = "white";
   }
 
   //stopping audio
   if (oscs.length >= 50) {
+    viewBox.style.backgroundColor = "white";
+    viewBox.style.color = "white";
     roomAudio.pause();
     fogAudio.pause();
     beat.pause();
