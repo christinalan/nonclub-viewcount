@@ -55,13 +55,13 @@ window.addEventListener("load", () => {
   //viewer count
   showCount = document.createElement("p");
   showCount.innerHTML = "";
+
   socket.on("viewers", (data) => {
     console.log(data);
 
     showCount.innerHTML = data;
 
     viewerSpan.appendChild(showCount);
-    // chatBox.scrollTop = chatBox.scrollHeight;
   });
 });
 
@@ -191,6 +191,7 @@ slider.addEventListener("click", () => {
   if (slider_input == 100) {
     viewBox.style.backgroundColor = "rgb(0, 0, 100)";
     viewBox.style.color = "rgb(98, 234, 255)";
+
     slider.style.opacity = 0;
     document.getElementById("room_q").appendChild(fQ);
     roomAudio.play();
