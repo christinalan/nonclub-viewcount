@@ -86,7 +86,7 @@ window.addEventListener("scroll", () => {
   let currentScroll = window.scrollY;
 
   if (currentScroll >= 150 && lastScroll <= currentScroll) {
-    p1.innerHTML = "close your eyes";
+    p1.innerHTML = "close your eyes (yes, just trust)";
 
     document.getElementById("prompt").appendChild(p1);
     background(0);
